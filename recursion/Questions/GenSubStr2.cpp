@@ -1,4 +1,4 @@
-# include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 void genSubStr(string s, string ans){
@@ -8,14 +8,18 @@ void genSubStr(string s, string ans){
     }
 
     char c = s[0];
-    string ros =  s.substr(1);
+    int code = c;
+    string ros = s.substr(1);
 
     genSubStr(ros, ans);
     genSubStr(ros, ans+c);
+    genSubStr(ros, ans+ to_string(code));
+
 }
 
 int main(){
-    genSubStr("ABC","");
+
+    genSubStr("AB","");
     
     return 0;
 }

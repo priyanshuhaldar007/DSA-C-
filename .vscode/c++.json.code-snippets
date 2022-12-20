@@ -20,7 +20,7 @@
 		"body": [
 			"# include<bits/stdc++.h>",
 			"using namespace std;\n",
-			"int main()\n{",
+			"int main(){\n",
 			"\t$1",
 			"\treturn 0;",
 			"}"
