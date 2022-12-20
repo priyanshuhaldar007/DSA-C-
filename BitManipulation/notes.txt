@@ -1,0 +1,101 @@
+Bitwise oprator
+----------------
+
+1. Binary AND (&)
+
+    Truth Table
+    _______________
+    | A | B | A&B |
+    +———+———+—————+
+    | 0 | 0 |  0  |
+    | 0 | 1 |  0  |
+    | 1 | 0 |  0  |
+    | 1 | 1 |  1  | 
+    ￣￣￣￣￣￣￣￣
+    
+ ● Conclusion:  A & 1 = A and A & 0 = 0
+
+****************************************************************
+2. Binary OR (|)
+
+    Truth Table
+    _______________
+    | A | B | A|B |
+    +———+———+—————+
+    | 0 | 0 |  0  |
+    | 0 | 1 |  1  |
+    | 1 | 0 |  1  |
+    | 1 | 1 |  1  | 
+    ￣￣￣￣￣￣￣￣
+    
+ ● Conclusion:  A | 0 = A 
+
+****************************************************************
+3. Binary XOR (^)
+
+    Truth Table
+    _______________
+    | A | B | A^B |
+    +———+———+—————+
+    | 0 | 0 |  0  |
+    | 0 | 1 |  1  |
+    | 1 | 0 |  1  |
+    | 1 | 1 |  0  | 
+    ￣￣￣￣￣￣￣￣
+    
+ ● Conclusion:  A ^ 1 = Ā and A ^ 0 = A and A ^ A = 0
+
+****************************************************************
+4. One's Compliment (~) 
+
+    A = 1 0 1 1 0
+    Ā = 0 1 0 0 1
+
+****************************************************************
+5. Left shift operator (<<)
+
+    shifts all the bits to left side by mentioned positions
+    number << position
+
+    Eg.:
+        10<<1 = (1010)₂ << 1 = (10100)₂ = 20
+
+ ● Conclusion:  a << b = a * 2^b
+
+****************************************************************
+5. Right shift operator (>>)
+
+    shifts all the bits to right side by mentioned positions
+    number >> position
+
+    Eg.:
+        10>>1 = (1010)₂ >> 1 = (0101)₂ = 5
+
+ ● Conclusion:  a >> b = a / 2^b
+
+****************************************************************
+6. Negetive numbers in Binary
+    1 byte = 8 bits
+
+    10 => 0 0 0 0 1 0 1 0 {1 byte representation}
+          ↓            ↓
+         msb          lsb
+
+MSB - Most Significant Bit - Tells whether a number is positive or Negetive {1 means -ve & 0 means +ve}
+LSB - Least Significant Bit - Tells a number whether a number is even or odd {0 means even & 1 means odd}
+
+* value of a number is stored in the n-1 bits.
+
+How to find negetive:- (2's compliment method)
+
+STEP 1: compliment of a no
+STEP 2: add 1 to it
+
+(10)₁₀ = (0 0 0 0 1 0 1 0)₂
+
+STEP 1: 1 1 1 1 0 1 0 1
+
+STEP 2: 1 1 1 1 0 1 0 1
+      +               1
+        ---------------
+        1 1 1 1 0 1 1 0   => (-10)₁₀

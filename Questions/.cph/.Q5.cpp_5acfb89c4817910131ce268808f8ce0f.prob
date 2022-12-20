@@ -1,0 +1,1 @@
+{"name":"Local: Q5","url":"c:\\Users\\priya\\OneDrive\\Desktop\\C++\\Questions\\Q5.cpp","tests":[{"id":1665048178714,"input":"2\n10 6\n1 2 1 4 1 1 3 1 1 5\n6 3\n1 2 3 4 2 1","output":"RAMYA\nJANI"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\priya\\OneDrive\\Desktop\\C++\\Questions\\Q5.cpp","group":"local","local":true}
