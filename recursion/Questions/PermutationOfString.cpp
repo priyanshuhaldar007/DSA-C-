@@ -14,8 +14,43 @@ void PermutationOfString(string s, string ans){
     }
 }
 
+//love babbar- by swapping
+void PermuteStr(string s, vector<string> ans, int i){
+    if(i>=s.length()){
+        for(int j=0;j<s.size();j++){
+            cout<<s[j]<<" ";
+        }
+        cout<<endl;
+        return ; 
+    }
+    for(int j=i; j<s.length();j++){
+        swap(s[i],s[j]);
+        PermuteStr(s,ans,i+1);
+        swap(s[i],s[j]);
+    }
+}
+
+//love babbar- by pushing
+void pS(string s, vector<string> ans, int i){
+    if(i>=s.length()){
+        for(int j=0;j<ans.size();j++){
+            cout<<ans[j]<<" ";
+        }
+        return;
+    }
+
+    for(int j=i;j<s.length();j++){
+        string a = "";
+        a+=s[j];
+        ans.push_back(a);
+        pS(s,ans,i+1);
+        ans.pop_back();
+    }
+}
 int main(){
-    PermutationOfString("ABC","");
+    vector<string> ans;
+    // PermutationOfString("ABC","");
+    PermuteStr("abc",ans,0);
     
     return 0;
 }
