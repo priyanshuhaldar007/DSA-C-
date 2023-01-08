@@ -13,26 +13,28 @@ bool isPrime(int num){
 
 int main(){
 
-    int num = 40;
-    int limit = sqrt(num); // 6
-    int arr[num] = {1};
+    int num = 20;
+    vector<int> arr(num,1);
     int index=0; // index integer for arr
     for(int i=2;i<num;i++,index++){
         if(arr[index]==1){
             for(int j=index+i;j<num;j+=i){
-                arr[j]=0;
+                arr[j]=0;                
             }
         }
     }
 
+    int count=0;
     for(int i=0;i<num-1;i++){
         if(arr[i]==1){
+            count++;
             cout<<i+2<<" is Prime"<<endl;
         }
         else{
             cout<<i+2<<" is not prime"<<endl;
         }
     }
+    cout<<"Total number of Pimes: "<<count<<endl;
 
     return 0;
 }

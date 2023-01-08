@@ -50,7 +50,7 @@ void quickSort(int arr[], int s, int e){
 
 int main(){
 
-    int arr[5]={2,4,9,1,6};
+    int arr[5]={5,2,8,4,7};
     int n=5;
 
     quickSort(arr,0,n-1);

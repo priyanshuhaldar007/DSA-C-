@@ -13,10 +13,23 @@ bool isPrime(int num){
     cout<<"Prime";
     return true;
 }
+int check(int n, int i){
+    if(n<=1){
+        return 0;
+    }
+    if(i==n){
+        return 1;
+    }
+    if(n%i==0){
+        return 0;
+    }
+    check(n,i+1);
+}
 
 int main(){
     int num;
     cin>>num;
-    isPrime(num);
+    // isPrime(num);
+    cout<<check(num,2);
     return 0;
 }
