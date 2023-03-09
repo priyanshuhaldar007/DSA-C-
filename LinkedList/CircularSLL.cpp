@@ -89,17 +89,17 @@ int main(){
     InsertNode(tail,5,3);
     print(tail);
     
-    // InsertNode(tail,3,5);
-    // print(tail);
+    InsertNode(tail,3,5);
+    print(tail);
     
-    // InsertNode(tail,5,7);
-    // print(tail);
+    InsertNode(tail,5,7);
+    print(tail);
 
-    // InsertNode(tail,7,9);
-    // print(tail);
+    InsertNode(tail,7,9);
+    print(tail);
     
-    // InsertNode(tail,5,6);
-    // print(tail);
+    InsertNode(tail,5,6);
+    print(tail);
     
     deleteNode(tail,3);
     print(tail);

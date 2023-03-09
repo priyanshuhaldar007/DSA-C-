@@ -2,3 +2,6 @@
 .vscode
 tempCodeRunnerFile.cpp
 .git
+.exe
+Test.cpp
+test2.cpp
